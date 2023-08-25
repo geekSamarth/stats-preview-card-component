@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+:root{
+    /* declaring primary colors */
+    --primary-main-background: hsl(233, 47%, 7%);
+    --primary-card-background: hsl(244, 38%, 16%);
+    --primary-accent: hsl(277, 91%, 33%);
+    /* declaring neutral color */
+    --secondary-heading-color: hsl(0, 0%, 100%);
+    --secondary-text-color:hsla(0, 0%, 100%, 0.75);
+    --secondary-stat-heading:hsla(0, 0%, 100%, 0.6);
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--primary-main-background);
+}
+main{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    max-width: 90vw;
+    background-color: var(--primary-card-background);
+    border-radius: 10px;
+}
+.image-header{
+    width: 90vw;
+    background-image: url('./images/image-header-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+.image img{
+    width: 100%;
+}
+.image .desktop-image{
+    display: none;
+}
+.image-header::after{
+content: "";
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: var(--primary-accent);
+opacity: 0.55;
+overflow: hidden;
+}
