@@ -1,0 +1,38 @@
+@media screen and (width>1150px) {
+    main {
+      flex-direction: row-reverse;
+    }
+    .stat-container {
+      text-align: left;
+      margin: 3rem;
+    }
+    .stat-container h1 {
+      font-size: 2.5rem;
+    }
+    .desktop-image {
+      display: block;
+    }
+    .mobile-image {
+      display: none;
+    }
+    .image-header{
+      background: url('./images/image-header-desktop.jpg');
+    }
+    .image-header::after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: var(--primary-accent);
+      opacity: 0.5;
+      overflow: hidden;
+      }
+    .stats-data {
+      flex-direction: row;
+      text-align: left;
+      gap: 3em;
+    }
+  }
+  
